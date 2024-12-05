@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Vault</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Secure File Vault</h1>
+    <div id="auth-section">
+      <input type="password" id="password" placeholder="Enter Password" />
+      <button id="unlock-btn">Unlock</button>
+    </div>
+    <div id="main-section" class="hidden">
+      <div id="upload-area" class="upload-area">
+        <p>Drag & Drop Files Here or <button id="file-btn">Browse</button></p>
+        <input type="file" id="file-input" multiple hidden />
+      </div>
+      <div id="file-list"></div>
+      <button id="lock-btn">Lock Vault</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background: #2e2e3a;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.upload-area {
+  background: #404056;
+  padding: 20px;
+  border: 2px dashed #6c63ff;
+  border-radius: 10px;
+  margin: 20px 0;
+  transition: background 0.3s ease;
+}
+
+.upload-area.dragging {
+  background: #6c63ff;
+}
+
+button {
+  background: #6c63ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #5149c6;
+}
+
+.hidden {
+  display: none;
+}
